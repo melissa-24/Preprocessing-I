@@ -144,3 +144,18 @@ nav a {
   padding: 15px;
   font-size: 1.5em;
 }
+header {
+  display: flex;
+}
+.skills {
+  display: flex;
+}
+.work {
+  display: flex;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
