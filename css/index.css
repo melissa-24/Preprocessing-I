@@ -188,6 +188,21 @@ header {
   height: 300px;
   border: 1px solid black;
 }
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.heading h1 {
+  font-size: 4em;
+  color: #004d4d;
+}
+.heading p {
+  font-size: 1.25em;
+  padding: 1em;
+}
 footer {
   display: flex;
   flex-direction: column;
