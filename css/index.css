@@ -146,6 +146,14 @@ nav a {
 }
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 60%;
+  background: lightgrey;
+}
+header img {
+  margin: 1em;
 }
 .skills {
   display: flex;
