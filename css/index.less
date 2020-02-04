@@ -56,26 +56,54 @@ table {
 html, body {
     height: 100%;
 }
+.center {margin: auto;}
+
 nav {display: flex;
     flex-direction: row;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    overflow: hidden;
+    top: 5px;
+    z-index: 10;
+    border: 1px solid black;
     padding: 5px;
+    width: 100%;
+
+    img {margin: 1em;
+        border-radius: 100%;
+        width: 3em;}
 
     a {padding:15px;
-        font-size: 1.5em;}
+        font-size: 1em;}
 }
+.main {
+    border: 1px solid black;
+    margin: 10em 5em 1em 5em;
+    position: relative;}
+
 header {display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     width: 60%;
+    height: 300px;
+    border: 1px solid black;
     background: lightgrey;
+    margin: 2em;
     
-    img {margin: 1em;}
 }
-.skills {display: flex;}
-.work {display: flex;}
+.skills {display: flex;
+    height: 300px;
+    border: 1px solid black;}
+
+.work {display: flex;
+    height: 300px;
+    border: 1px solid black;}
+
 footer {display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;}
