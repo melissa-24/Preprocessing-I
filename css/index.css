@@ -177,7 +177,7 @@ nav a {
 }
 @media only screen and (max-width: 730px) {
   nav {
-    border-radius: 0%;
+    border-radius: 5%;
     height: 6em;
   }
 }
@@ -261,7 +261,7 @@ header p {
     font-weight: bold;
   }
 }
-/* Skills Section Styles */
+/* Section Styles */
 .section {
   display: flex;
   flex-direction: column;
@@ -278,32 +278,52 @@ header p {
   align-items: center;
   justify-content: space-evenly;
 }
+.git {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .list {
   padding: 3em 8em 1em 8em;
 }
 .list li {
   line-height: 2;
 }
+.list li b {
+  font-weight: bold;
+  font-style: italic;
+}
+.gitlist {
+  padding: 3em 5em 1em 5em;
+}
+.gitlist li {
+  line-height: 2;
+}
+.gitlist li b {
+  font-weight: bold;
+  font-style: italic;
+}
+.gitlist li img {
+  width: 20em;
+}
+@media only screen and (max-width: 975px) {
+  .gitlist {
+    padding: 3em 2em 1em 2em;
+  }
+  .gitlist li img {
+    width: 15em;
+  }
+}
 @media only screen and (max-width: 730px) {
   .list {
     padding: 3em 5em 1em 5em;
   }
 }
-/* Links Styles */
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-.heading h1 {
-  font-size: 4em;
-  color: #004d4d;
-}
-.heading p {
-  font-size: 1.25em;
-  padding: 1em;
+@media only screen and (max-width: 400px) {
+  .list {
+    padding: 3em 2em 1em 2em;
+  }
 }
 /* Footer Styles */
 footer {
