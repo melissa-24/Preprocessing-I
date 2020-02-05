@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    color: #004d4d;
 }
 ol, ul {
 	list-style: none;
@@ -58,6 +59,8 @@ html, body {
 }
 .center {margin: auto;}
 
+/* Navigation Styles */
+
 nav {display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,9 +68,9 @@ nav {display: flex;
     position: fixed;
     overflow: hidden;
     top: 5px;
-    background: #f2f2f2;
+    background: #e6ffff;
     z-index: 10;
-    border: 1px solid #a6a6a6;
+    border: 4px groove #00cccc;
     border-radius: 50%;
     padding: 5px;
     width: 100%;
@@ -79,30 +82,121 @@ nav {display: flex;
     a {padding:15px;
         font-size: 1em;}
 }
+
+@media only screen and (max-width: 975px) {
+    nav {height: 5em;
+        flex-wrap: wrap;
+
+        p {display: none;}
+        img {display: none;}
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    nav {border-radius: 0%;
+        height: 6em;}
+}
+
+@media only screen and (max-width: 400px) {
+    nav {height: 8.5em;}
+}
+
+/* Main body Style */
+
 .main {
     border: 1px solid black;
     margin: 10em 5em 1em 5em;
     position: relative;
-    border-radius: 20%;}
+    background: #e6ffff;
+    border: 4px groove #00cccc;
+    border-radius: 10%;}
+
+@media only screen and (max-width: 975px) {
+    .main {margin: 8em 5em 1em 5em;}
+}
+
+@media only screen and (max-width: 730px) {
+    .main {margin: 8em 1em 1em 1em;}
+}
+
+@media only screen and (max-width: 400px) {
+    .main {margin: 10em 1em 1em 1em;}
+}
+
+/* Intro Styles */
 
 header {display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: 300px;
-    border: 1px solid black;
-    background: lightgrey;
     margin: 2em;
+    border-bottom: 4px groove #00cccc;
     
-}
-.skills {display: flex;
-    height: 300px;
-    border: 1px solid black;}
+    h1 {font-size: 4em;
+        padding: 1em 0 0 0;}
+    
+    h2 {font-size: 1.5em;
+        padding: 1em;}
 
-.work {display: flex;
-    height: 300px;
-    border: 1px solid black;}
+    p {padding: 1em;}
+}
+
+@media only screen and (max-width: 975px) {
+    header {flex-wrap: wrap;
+
+        h1 {font-size: 3em;}
+
+        h2 {font-size: 1em;}
+
+        p {left: 50%;}
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    header {height: 15em;
+    
+        h1 {font-size: 2em;}
+
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {height: 12em;
+    
+        h1 {font-size: 1.5em;
+            font-weight: bold;}
+    }
+}
+
+/* Skills Section Styles */
+
+.section {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 2em 0;
+
+    h1 {font-size: 2.5em;}
+}
+
+.ul {display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;}
+
+.list {padding: 3em 8em 1em 8em;
+    li {line-height: 2;}
+}
+
+@media only screen and (max-width: 975px) {
+
+}
+
+@media only screen and (max-width: 730px) {
+    .list {padding: 3em 5em 1em 5em;}
+}
+
+/* Links Styles */
 
 .heading {display: flex;
     flex-direction: column;
@@ -117,9 +211,12 @@ header {display: flex;
         padding: 1em;}
 }
 
+/* Footer Styles */
+
 footer {display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 2.5;
+    border-top: 4px groove #00cccc;
 }
