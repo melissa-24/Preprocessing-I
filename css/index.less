@@ -67,11 +67,20 @@ html, body {
 @color : #e6ffff;
 @border: 4px groove #00cccc;
 
+//Mixin
+
+.flexrow {display: flex;
+    flex-direction: row;
+    align-items: center;}
+
+.flexcolumn {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
 /* Navigation Styles */
 
-nav {display: flex;
-    flex-direction: row;
-    align-items: center;
+nav {.flexrow ();
     justify-content: space-around;
     position: fixed;
     overflow: hidden;
@@ -112,7 +121,6 @@ nav {display: flex;
 /* Main body Style */
 
 .main {
-    border: 1px solid black;
     margin: 10em 5em 1em 5em;
     position: relative;
     background: @color;
@@ -133,10 +141,7 @@ nav {display: flex;
 
 /* Intro Styles */
 
-header {display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header {.flexcolumn ();
     margin: 2em;
     border-bottom: @border;
     
@@ -178,24 +183,17 @@ header {display: flex;
 
 /* Section Styles */
 
-.section {display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.section {.flexcolumn ();
     margin: 1em 0 2em 0;
 
     h1 {font-size: 2.5em;}
     
 }
 
-.ul {display: flex;
-    flex-direction: row;
-    align-items: center;
+.ul {.flexrow ();
     justify-content: space-evenly;}
 
-.git {display: flex;
-    flex-direction: row;
-    align-items: center;
+.git {.flexrow ();
     justify-content: space-evenly;}
 
 .list {padding: 3em 8em 1em 8em;
@@ -249,10 +247,7 @@ header {display: flex;
 
 /* Footer Styles */
 
-footer {display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+footer {.flexcolumn ();
     line-height: 2.5;
     border-top: @border;
 }
