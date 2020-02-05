@@ -135,6 +135,7 @@ html,
 body {
   height: 100%;
 }
+/* My main code starts here */
 .center {
   margin: auto;
 }
@@ -307,6 +308,9 @@ header p {
 .gitlist li img {
   width: 20em;
 }
+.gitlist li p {
+  display: none;
+}
 @media only screen and (max-width: 975px) {
   .gitlist {
     padding: 3em 2em 1em 2em;
@@ -319,10 +323,25 @@ header p {
   .list {
     padding: 3em 5em 1em 5em;
   }
+  .git {
+    flex-direction: column;
+  }
+  .gitlist {
+    padding: 3em 5em 1em 5em;
+  }
+  .gitlist li img {
+    width: 20em;
+  }
 }
 @media only screen and (max-width: 400px) {
   .list {
     padding: 3em 2em 1em 2em;
+  }
+  .gitlist li img {
+    display: none;
+  }
+  .gitlist li p {
+    display: block;
   }
 }
 /* Footer Styles */
